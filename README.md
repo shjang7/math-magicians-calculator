@@ -1,68 +1,78 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">Welcome to Math magicians calculator 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <a href="https://github.com/shjang7/math-magicians-calculator/tree/release-1.0" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+  <a href="https://github.com/shjang7/math-magicians-calculator/graphs/commit-activity" target="_blank">
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
+  </a>
+  <a href="https://github.com/shjang7/math-magicians-calculator/blob/master/LICENSE" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/github/license/shjang7/math-magicians-calculator" />
+  </a>
+  <a href="https://twitter.com/shjang12" target="_blank">
+    <img alt="Twitter: shjang12" src="https://img.shields.io/twitter/follow/shjang12.svg?style=social" />
+  </a>
+</p>
 
-## Available Scripts
+<br>
 
-In the project directory, you can run:
+This project is a calculator app to learn react application building. It mocks real world project for a fictional company that requires help.
 
-### `yarn start`
+The main requirements can be found and updated [here](https://github.com/microverseinc/project-react-calculator).
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Built With
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- React
+- Node.js
+- JavaScript (ES6)
+- CSS 3
 
-### `yarn test`
+### ✨ [Live Demo](https://react-calculator-suh.herokuapp.com/)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Usage
 
-### `yarn build`
+> Clone the repository to your local machine
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```sh
+$ git clone https://github.com/shjang7/math-magicians-calculator.git
+```
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+> cd into the directory, install dependencies, start(build and run)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```sh
+$ cd math-magicians-calculator
+$ npm install
+$ npm run start
+```
 
-### `yarn eject`
+> If it doesn't open automatically, open `http://localhost:3000` using your browser.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Test
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+After cloning the repo, navigate to the project directory and then run the test command `npm test`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Author
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+👤 **Suhyeon Jang**
 
-## Learn More
+- Github: [@shjang7](https://github.com/shjang7)
+- Twitter: [@shjang12](https://twitter.com/shjang12)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🤝 Contributing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/shjang7/math-magicians-calculator/issues).
 
-### Code Splitting
+1. Fork it (https://github.com/shjang7/math-magicians-calculator/fork)
+2. Create your working branch (git checkout -b [choose-a-name])
+3. Commit your changes (git commit -am 'what this commit will fix/add')
+4. Push to the branch (git push origin feature/[feature-name])
+5. Create a new Pull Request
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## Show your support
 
-### Analyzing the Bundle Size
+Give a ⭐️ if you like this project!
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+## 📝 License
 
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This project is [MIT](https://github.com/shjang7/math-magicians-calculator/blob/master/LICENSE) licensed.
