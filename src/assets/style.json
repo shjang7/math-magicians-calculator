@@ -1,0 +1,10 @@
+{
+  "color": {
+    "lightGray": "#ddd",
+    "orange": "#f60"
+  },
+  "buttonWidth": {
+    "normal": "25%",
+    "wide": "50%"
+  }
+}
