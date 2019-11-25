@@ -27,7 +27,7 @@
     "react/no-array-index-key": 1,
     "no-console": 1,
     "arrow-body-style": 1,
-    "react/prefer-stateless-function": 1,
+    "react/prefer-stateless-function": 0,
     "operator-linebreak": ["error", "before"]
   }
 }
