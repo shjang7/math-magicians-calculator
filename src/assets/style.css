@@ -1,0 +1,44 @@
+body {
+  font: 2rem 'Century Gothic', Futura, sans-serif;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.main {
+  width: 700px;
+}
+
+.display {
+  background-color: #555;
+  height: 100px;
+  color: white;
+  font-weight: bold;
+  box-sizing: border-box;
+  padding: 1rem;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.button-panel .group {
+  height: 100px;
+}
+
+.button {
+  width: 25%;
+  color: black;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid #aaa;
+  height: 100%;
+}
