@@ -49,7 +49,7 @@ function calculate(calculator, buttonName) {
       }
       return { total, next: next !== null ? next + buttonName : buttonName, operation };
     default:
-      if (!!next && (next.length >= 13 || (next.match(/\./) && next.split('.')[1].length >= 7))) {
+      if (!!next && (next.length >= 20 || (next.match(/\./) && next.split('.')[1].length >= 7))) {
         return { total: error.long, next: null, operation: null };
       }
       if (total && next === null && operation === null) {
