@@ -40,10 +40,10 @@ describe('#operate', () => {
     expect(operate(null, `${long}.${long}`, '8')).toBe(`${long}.${'8'.repeat(6)}9`);
   });
 
-  it('returns error for longer than 13 sized integral part number', () => {
-    expect(operate(null, `${'8'.repeat(13)}.8`, '8')).toBe(error.long);
-    expect(operate(null, `-${'8'.repeat(12)}`, '8')).toBe(error.long);
-    expect(operate(null, '8'.repeat(13), '8')).toBe(error.long);
+  it('returns error for longer than 20 sized integral part number', () => {
+    expect(operate(null, `${'8'.repeat(20)}.8`, '8')).toBe(error.long);
+    expect(operate(null, `-${'8'.repeat(19)}`, '8')).toBe(error.long);
+    expect(operate(null, '8'.repeat(20), '8')).toBe(error.long);
   });
 
   it('returns error for zero division', () => {

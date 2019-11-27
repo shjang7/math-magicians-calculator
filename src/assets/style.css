@@ -1,5 +1,5 @@
 body {
-  font: 2rem 'Century Gothic', Futura, sans-serif;
+  font: 15px 'Century Gothic', Futura, sans-serif;
 }
 
 .d-flex {
@@ -16,13 +16,16 @@ body {
 
 .main {
   width: 700px;
+  max-width: calc(100% - 2rem);
   margin-left: auto;
   margin-right: auto;
 }
 
 .display {
   background-color: #555;
-  height: 100px;
+  height: calc(calc(calc(100vw - 2rem) / 4) * calc(100 / 175));
+  max-height: 100px;
+  min-height: 70px;
   color: white;
   font-weight: bold;
   box-sizing: border-box;
@@ -32,8 +35,15 @@ body {
   font-size: 3rem;
 }
 
+.display.error {
+  font-size: 2rem;
+}
+
 .button-panel .group {
-  height: 100px;
+  background-color: #aaa;
+  height: calc(calc(calc(100vw - 2rem) / 4) * calc(100 / 175));
+  max-height: 100px;
+  min-height: 70px;
 }
 
 .button {
@@ -42,5 +52,22 @@ body {
   text-align: center;
   box-sizing: border-box;
   border: 1px solid #aaa;
-  height: 100%;
+  height: calc(calc(calc(100vw - 2rem) / 4) * calc(100 / 175));
+  max-height: 100%;
+  min-height: 70px;
+  font-size: 2rem;
+}
+
+@media (max-width: calc(700px - 2rem)) {
+  .display {
+    font-size: calc(1rem + 3vw);
+  }
+
+  .display.error {
+    font-size: calc(1rem + 1.8vw);
+  }
+
+  .button {
+    font-size: calc(1rem + 2vw);
+  }
 }

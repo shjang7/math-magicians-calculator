@@ -188,13 +188,13 @@ describe('#calculate', () => {
     expect(total).toEqual(error.expression);
   });
 
-  it('returns error for longer than 13 sized decimal point input', () => {
+  it('returns error for longer than 20 sized decimal point input', () => {
     const { total } = calculate({ total: null, next: `8.${'8'.repeat(11)}`, operation: null }, '8');
     expect(total).toEqual(error.long);
   });
 
-  it('returns error for longer than 13 sized natural number input', () => {
-    const { total } = calculate({ total: null, next: '8'.repeat(13), operation: null }, '8');
+  it('returns error for longer than 20 sized natural number input', () => {
+    const { total } = calculate({ total: null, next: '8'.repeat(20), operation: null }, '8');
     expect(total).toEqual(error.long);
   });
 });

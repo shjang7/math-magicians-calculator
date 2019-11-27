@@ -44,7 +44,7 @@ function operate(numberOne, numberTwo, operation) {
       res = numberOne || numberTwo || '0';
   }
   res = res.toString();
-  if (res.match(/e+/) || res.split('.')[0].length >= 13) {
+  if (res.match(/e+/) || res.split('.')[0].length >= 20) {
     return error.long;
   }
   if (res.match(/\./) && res.split('.')[1].length >= 7) {

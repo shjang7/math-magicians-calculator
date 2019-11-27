@@ -11,11 +11,20 @@ const buttonStyle = ({ color, wide }) => {
   return styleObj;
 };
 
-const Button = props => (
-  <button className="button" style={buttonStyle(props)} value={props.buttonName}>
-    {props.buttonName}
-  </button>
-);
+const Button = (props) => {
+  const handleClick = ({ target: { value: buttonName } }) => props.clickHandler(buttonName);
+
+  return (
+    <button
+      className="button"
+      style={buttonStyle(props)}
+      value={props.buttonName}
+      onClick={handleClick}
+    >
+      {props.buttonName}
+    </button>
+  );
+};
 
 Button.defaultProps = { color: color.orange, wide: false };
 
