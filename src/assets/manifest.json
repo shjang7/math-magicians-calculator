@@ -1,0 +1,8 @@
+{
+  "error": {
+    "zeroDivisionError": "Division by zero is undefined",
+    "doubleDot": "Dot cannot be written double times",
+    "long": "It is too long",
+    "expression": "Malformed expression"
+  }
+}
