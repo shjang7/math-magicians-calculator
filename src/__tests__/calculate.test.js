@@ -50,6 +50,21 @@ describe('#calculate', () => {
     expect(rightCalc).toEqual(rightResult);
   });
 
+  it('returns correct value for equal button with zero next', () => {
+    const rightCalc = calculate({ total: null, next: '0', operation: null }, '0');
+    const rightResult = { total: null, next: '0', operation: null };
+    expect(rightCalc).toEqual(rightResult);
+  });
+
+  it('returns correct value for equal button with zero next for decimal point', () => {
+    const firstCalc = calculate({ total: null, next: '0.', operation: null }, '0');
+    const firstResult = { total: null, next: '0.0', operation: null };
+    expect(firstCalc).toEqual(firstResult);
+    const secondCalc = calculate({ total: null, next: '0.0', operation: null }, '3');
+    const secondResult = { total: null, next: '0.03', operation: null };
+    expect(secondCalc).toEqual(secondResult);
+  });
+
   it('returns error for % button right after operator button', () => {
     const { total } = calculate({ total: null, next: '3', operation: 'x' }, '%');
     expect(total).toEqual(error.expression);

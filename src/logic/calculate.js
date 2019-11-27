@@ -55,10 +55,10 @@ function calculate(calculator, buttonName) {
       if (total && next === null && operation === null) {
         return { total: null, next: buttonName, operation };
       }
-      updatedNext = operate(null, next === null ? buttonName : next + buttonName, '=');
+      updatedNext
+        = next === null || next === '0' ? buttonName : operate(null, next + buttonName, '=');
       return { total, next: updatedNext, operation };
   }
-  // console.log(next.length);
   return { total: error.expression, next: null, operation: null };
 }
 
