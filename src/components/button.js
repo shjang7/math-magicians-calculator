@@ -12,7 +12,7 @@ const buttonStyle = ({ color, wide }) => {
 };
 
 const Button = props => (
-  <button className="button" style={buttonStyle(props)}>
+  <button className="button" style={buttonStyle(props)} value={props.buttonName}>
     {props.buttonName}
   </button>
 );
