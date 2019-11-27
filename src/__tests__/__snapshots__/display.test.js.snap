@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Display /> matches snapshot 1`] = `
+<div>
+  <div
+    class="display d-flex"
+  >
+    100
+  </div>
+</div>
+`;
