@@ -28,7 +28,11 @@
     "react/no-unused-prop-types": 0,
     "no-console": 1,
     "arrow-body-style": 1,
-    "react/prefer-stateless-function": 0,
-    "operator-linebreak": ["error", "before"]
+    "react/prefer-stateless-function": 1,
+    "operator-linebreak": ["error", "before"],
+    "no-unused-vars": 1,
+    "max-len": 1,
+    "object-curly-newline": 0,
+    "import/extensions": 1
   }
 }
