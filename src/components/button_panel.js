@@ -1,17 +1,21 @@
 import React from 'react';
 import Button from './button';
-import { color } from '../assets/style.json';
-
-const { lightGray: gray } = color;
+import style from '../assets/style.json';
 
 const ButtonPanel = ({ clickHandler }) => {
   const handleClick = buttonName => clickHandler(buttonName);
 
   const renderButton = ({ val, color }) => {
-    if (val === '0') return <Button buttonName={val} color={gray} wide clickHandler={handleClick} />;
-    if (color) return <Button buttonName={val} color={gray} clickHandler={handleClick} />;
+    if (val === '0') {
+      return <Button buttonName={val} color={color} wide clickHandler={handleClick} />;
+    }
+    if (color) {
+      return <Button buttonName={val} color={color} clickHandler={handleClick} />;
+    }
     return <Button buttonName={val} clickHandler={handleClick} />;
   };
+
+  const color = style.color.lightGray;
 
   return (
     <div className="button-panel d-flex flex-column">

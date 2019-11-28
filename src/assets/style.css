@@ -17,6 +17,7 @@ body {
 .main {
   width: 700px;
   max-width: calc(100% - 2rem);
+  margin-top: 1rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -60,11 +61,11 @@ body {
 
 @media (max-width: calc(700px - 2rem)) {
   .display {
-    font-size: calc(1rem + 3vw);
+    font-size: calc(1.2rem + 2vw);
   }
 
   .display.error {
-    font-size: calc(1rem + 1.8vw);
+    font-size: calc(0.9rem + 2vw);
   }
 
   .button {

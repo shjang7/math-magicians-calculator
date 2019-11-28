@@ -38,13 +38,9 @@ function calculate(calculator, buttonName) {
     case '.':
       if (total !== null && next === null && operation !== null) break;
       if (total === null && next === null && operation === null) break;
-      if (next !== null && next.match(/\./)) {
-        return { total: error.doubleDot, next: null, operation: null };
-      }
+      if (next !== null && next.match(/\./)) break;
       if (total !== null && next === null && operation === null) {
-        if (total.split('.')[1]) {
-          return { total: error.doubleDot, next: null, operation: null };
-        }
+        if (total.split('.')[1]) break;
         return { total: null, next: total + buttonName, operation };
       }
       return { total, next: next !== null ? next + buttonName : buttonName, operation };

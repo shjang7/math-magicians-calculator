@@ -155,27 +155,27 @@ describe('#calculate', () => {
 
   it('returns error for decimal point doubled input', () => {
     const { total } = calculate({ total: null, next: '2.3', operation: null }, '.');
-    expect(total).toEqual(error.doubleDot);
+    expect(total).toEqual(error.expression);
   });
 
   it('returns error for decimal point input right after decimal point', () => {
     const { total } = calculate({ total: null, next: '30.', operation: null }, '.');
-    expect(total).toEqual(error.doubleDot);
+    expect(total).toEqual(error.expression);
   });
 
   it('returns error for decimal point doubled with exist value', () => {
     const { total } = calculate({ total: '2.3', next: null, operation: null }, '.');
-    expect(total).toEqual(error.doubleDot);
+    expect(total).toEqual(error.expression);
   });
 
   it('returns error for decimal point input before submit', () => {
     const { total } = calculate({ total: '2.3', next: '30.02', operation: '+' }, '.');
-    expect(total).toEqual(error.doubleDot);
+    expect(total).toEqual(error.expression);
   });
 
   it('returns error for decimal point input only twice times', () => {
     const { total } = calculate({ total: null, next: '30.', operation: null }, '.');
-    expect(total).toEqual(error.doubleDot);
+    expect(total).toEqual(error.expression);
   });
 
   it('returns error for decimal point only after operation input', () => {

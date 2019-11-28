@@ -26,10 +26,7 @@ const App = () => {
 
   const renderDisplay = () => {
     const result = next || total;
-    if (result) {
-      return <Display result={String(result)} />;
-    }
-    return <Display />;
+    return result ? <Display result={String(result)} /> : <Display />;
   };
 
   return (
