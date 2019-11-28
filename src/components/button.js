@@ -1,18 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { color, buttonWidth } from '../assets/style.json';
-
-const { normal, wide: wideWidth } = buttonWidth;
-
-const buttonStyle = ({ color, wide }) => {
-  const styleObj = { backgroundColor: null, width: null };
-  styleObj.backgroundColor = color;
-  styleObj.width = wide ? wideWidth : normal;
-  return styleObj;
-};
+import style from '../assets/style.json';
 
 const Button = (props) => {
   const handleClick = ({ target: { value: buttonName } }) => props.clickHandler(buttonName);
+
+  const buttonStyle = ({ color, wide }) => {
+    const { wide: wideButton, normal: normalButton } = style.buttonWidth;
+    return {
+      backgroundColor: color,
+      width: wide ? wideButton : normalButton,
+    };
+  };
 
   return (
     <button
@@ -26,7 +25,7 @@ const Button = (props) => {
   );
 };
 
-Button.defaultProps = { color: color.orange, wide: false };
+Button.defaultProps = { color: style.color.orange, wide: false };
 
 Button.propTypes = {
   buttonName: PropTypes.string.isRequired,
