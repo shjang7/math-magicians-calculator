@@ -19,7 +19,7 @@
 
 This project is a calculator app to learn about React Props and State.
 
-It mocks real world project for a fictional company that requires help.
+It mocks real-world project for a fictional company that requires help.
 
 The main requirements can be found and updated [here](https://github.com/microverseinc/project-react-calculator).
 
